@@ -52,4 +52,7 @@ defmodule Bamboo.LocalAdapter do
     end
   end
   defp open_url_in_browser(_url), do: raise("Only strings are supported as url")
+
+  @doc false
+  def supports_attachments?, do: true
 end
